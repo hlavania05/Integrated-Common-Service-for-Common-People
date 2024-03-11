@@ -1,0 +1,237 @@
+body{
+    background-color : black;
+}
+#img{
+    margin-left : 20%;
+    margin-right : 25%;
+    width : 700px;
+    height : 500px;
+    background-image: url("./Screenshot\ \(209\).png");
+    background-size : cover;
+    animation-name : something;
+    animation-duration: 18s;
+    animation-direction: normal;
+}
+
+@keyframes something{
+    0%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(209\).png");
+    }
+    3%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(209\).png");
+    }
+
+
+    6%{
+        width : 700px;
+        height : 550px;
+        background-image: url("./Screenshot\ \(210\).png");
+    }
+    9%{
+        width : 800px;
+        height : 650px;
+        background-image: url("./Screenshot\ \(210\).png");
+    }
+
+
+    12%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(211\).png");
+    }
+    15%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(211\).png");
+    }
+
+
+    17%{
+        width : 750px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(213\).png");
+    }
+    20%{
+        width : 900px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(213\).png");
+    }
+
+
+    23%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(214\).png");
+    }
+    25.5%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(214\).png");
+    }
+
+
+    28%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(215\).png");
+    }
+    30.5%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(215\).png");
+    }
+
+
+    34%{
+        width : 700px;
+        height : 700px;
+        background-image: url("./Screenshot\ \(216\).png");
+    }
+    36%{
+        width : 800px;
+        height : 900px;
+        background-image: url("./Screenshot\ \(216\).png");
+    }
+
+
+    38.5%{
+        width : 700px;
+        height : 700px;
+        background-image: url("./Screenshot\ \(217\).png");
+    }
+    41%{
+        width : 800px;
+        height : 900px;
+        background-image: url("./Screenshot\ \(217\).png");
+    }
+
+
+    43.5%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(218\).png");
+    }
+    45.5%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(218\).png");
+    }
+
+
+    47.5%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(219\).png");
+    }
+    50%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(219\).png");
+    }
+
+
+    52.5%{
+        width : 700px;
+        height : 550px;
+        background-image: url("./Screenshot\ \(220\).png");
+    }
+    55%{
+        width : 800px;
+        height : 650px;
+        background-image: url("./Screenshot\ \(220\).png");
+    }
+
+
+    58%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(221\).png");
+    }
+    61%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(221\).png");
+    }
+
+
+    63.5%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(222\).png");
+    }
+    66%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(222\).png");
+    }
+
+
+    68.5%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(223\).png");
+    }
+    71%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(223\).png");
+    }
+
+
+    74%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(224\).png");
+    }
+    77%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(224\).png");
+    }
+
+
+    80%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(225\).png");
+    }
+    82.5%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(225\).png");
+    }
+
+
+    85%{
+        width : 700px;
+        height : 500px;
+        background-image: url("./Screenshot\ \(226\).png");
+    }
+    87.5%{
+        width : 800px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(226\).png");
+    }
+
+
+    90%{
+        width : 700px;
+        height : 600px;
+        background-image: url("./Screenshot\ \(227\).png");
+        transform : rotate(0deg);
+    }
+
+    100%{
+        width : 800px;
+        height : 700px;
+        background-image: url("./Screenshot\ \(227\).png");
+        transform : rotate(360deg);
+        
+    }
+}
+
+
