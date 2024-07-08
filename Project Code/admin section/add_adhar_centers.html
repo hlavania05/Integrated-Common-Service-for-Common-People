@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Aadhar Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 40%;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+            margin-top: 4rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0284B1;
+            font-size: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 1rem 0 0.3rem;
+        }
+
+        input[type="text"],
+        textarea {
+            padding: 0.7rem;
+            border-radius: 0.6rem;
+            border: 2px solid #ddd;
+            width: 95%;
+            margin: 0.5rem auto;
+            font-size: 1rem;
+            color : black;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 3rem;
+        }
+
+        button {
+            margin-top: 1.3rem;
+            padding: 0.6rem 0.2rem;
+            border: 2px solid #0284B1;
+            border-radius: 0.6rem;
+            background: white;
+            color: #0284B1;
+            font-size: 100%;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        button:hover {
+            color: white;
+            background: #0284B1;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Aadhar Center</h1>
+        <form id="addCenterForm">
+            <input type="text" id="name" name="name" placeholder="Center Name" required>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <input type="text" id="city" name="city" placeholder="City" required>
+            <input type="text" id="state" name="state" placeholder="State" required>
+            <input type="text" id="pincode" name="pincode" placeholder="Pincode" required>
+            <input type="text" id="contact" name="contact" placeholder="Contact Number" required>
+            <button type="submit">Add Center</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script>
+        document.getElementById('addCenterForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('add_adhar_centers.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('message').innerText = data;
+                    this.reset();
+                })
+                .catch(error => {
+                    document.getElementById('message').innerText = 'Error: ' + error;
+                });
+        });
+
+    </script>
+</body>
+
+</html>

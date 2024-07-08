@@ -1,0 +1,16 @@
+CREATE DATABASE SchoolDirectory;
+
+USE SchoolDirectory;
+
+CREATE TABLE schools (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    admission_process TEXT NOT NULL,
+    fees_structure TEXT NOT NULL
+);
+
+INSERT INTO schools (name, address, admission_process, fees_structure) VALUES
+('Green Valley High School', '123 Elm St, Springfield', 'Online application, followed by an entrance test.', 'Tuition: $2000/year, Books: $200/year'),
+('Blue Ridge Academy', '456 Oak St, Springfield', 'Submit application form, followed by an interview.', 'Tuition: $2500/year, Books: $250/year'),
+('Sunshine Public School', '789 Pine St, Springfield', 'Direct admission based on previous year marks.', 'Tuition: $1800/year, Books: $150/year');

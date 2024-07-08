@@ -1,0 +1,13 @@
+CREATE TABLE hospitals (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    address TEXT NOT NULL,
+    contact_number VARCHAR(20) NOT NULL,
+    email VARCHAR(100),
+    description TEXT,
+    rating FLOAT,
+    insurance_coverage TEXT,
+    services TEXT,
+    facilities TEXT
+);
+

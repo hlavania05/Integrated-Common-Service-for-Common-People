@@ -1,0 +1,18 @@
+CREATE TABLE coaching_centers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    courses_offered TEXT,
+    admission_process VARCHAR(255),
+    location VARCHAR(255),
+    faculty_name VARCHAR(100),
+    fee_structure VARCHAR(100),
+    contact_info VARCHAR(255)
+);
+
+
+INSERT INTO coaching_centers (name, courses_offered, admission_process, location, faculty_name, fee_structure, contact_info) VALUES
+('ABC Coaching Institute', 'Mathematics, Science, English', 'Entrance exam and interview', '123 Main Street, Cityville', 'Prof. John Doe, Dr. Jane Smith', '$1000 per semester', 'Phone: 123-456-7890, Email: info@abc-coaching.com'),
+('XYZ Education Center', 'Physics, Chemistry, Biology', 'Direct admission based on grades', '456 Park Avenue, Townsville', 'Dr. Michael Brown, Prof. Emily Green', '$1200 per semester', 'Phone: 987-654-3210, Email: contact@xyz-edu.org'),
+('PQR Learning Hub', 'History, Geography, Economics', 'Merit-based admission', '789 Center Road, Villagetown', 'Ms. Sarah Johnson, Mr. David Lee', '$800 per semester', 'Phone: 555-123-4567, Email: info@pqrlhub.com'),
+('EFG Tutorial Center', 'Computer Science, Programming', 'Personal interview and assessment', '101 Tech Avenue, Tech City', 'Dr. Alex Smith, Ms. Emily Watson', '$1500 per semester', 'Phone: 111-222-3333, Email: contact@efgtutorial.com'),
+('LMN Academy', 'Art, Music, Dance', 'Portfolio review', '222 Art Street, Artville', 'Mr. Jack Brown, Ms. Lisa Green', '$900 per semester', 'Phone: 333-444-5555, Email: info@lmnacademy.org');

@@ -1,0 +1,23 @@
+CREATE TABLE colleges (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    undergraduate VARCHAR(100),
+    graduate VARCHAR(100),
+    certificate_courses VARCHAR(255),
+    eligibility_criteria TEXT,
+    admission_process TEXT,
+    application_form VARCHAR(100),
+    tuition_fees DECIMAL(10, 2),
+    hostel_fees DECIMAL(10, 2),
+    bus_fees DECIMAL(10, 2),
+    phone_number VARCHAR(20),
+    email VARCHAR(100)
+);
+
+
+INSERT INTO colleges (name, location, undergraduate, graduate, certificate_courses, eligibility_criteria, admission_process, application_form, tuition_fees, hostel_fees, bus_fees, phone_number, email)
+VALUES
+    ('Example University', '123 Main Street, Cityville, State', 'Computer Science, Business Administration', 'MBA, Physics', 'Digital Marketing, Data Analytics', 'Minimum GPA of 3.0, TOEFL score of 90', 'Online application, Interview', 'https://exampleuniversity.com/apply', 15000.00, 5000.00, 1000.00, '+1234567890', 'info@exampleuniversity.com'),
+    ('Sample College', '456 Elm Street, Townsville, State', 'Psychology, Engineering', 'MS in Biology', 'Web Development, Graphic Design', 'SAT score of 1200, IELTS score of 6.5', 'Paper application, Aptitude test', 'https://samplecollege.edu/apply', 12000.00, 4500.00, 800.00, '+1987654321', 'admissions@samplecollege.edu');
+

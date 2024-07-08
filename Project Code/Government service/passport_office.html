@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearest Passport Center Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 6rem;
+            border-radius: 0.3rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("./images/passport_center.jpg");
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 2rem;
+            background: #0284B1;
+            color: white;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        input {
+            padding: 0.8rem;
+            width: 30vw;
+            margin: 0.8rem 0;
+            font-size: 1.2rem;
+            border-radius: 0.4rem;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            color: #0284B1;
+            border: 2px solid #0284B1;
+            cursor: pointer;
+            border-radius: 0.4rem;
+            font-size: 1.2rem;
+            margin-left: 0.4rem;
+        }
+
+        button:hover {
+            background: #0284B1;
+            color: white;
+            border: bone;
+        }
+
+        #result {
+            padding: 2rem auto;
+            margin: 2rem auto;
+            width: 70%;
+            color: black;
+            border-radius: 0.8rem;
+            background-color:  #f4f4f4;
+        }
+        .passport-center{
+            border-radius: 1rem; 
+            padding : 1.4rem; 
+            border: 1px solid #ccc; 
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+            margin-top : 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search Nearest Passport Centers</h1>
+    <div class="container">
+        <form id="searchForm" action="./passport_office.php" method="GET">
+            <label for="location"></label>
+            <input type="text" id="location" name="location" placeholder="Enter Location Name" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="result"></div>
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const location = document.getElementById('location').value.trim();
+            if (location !== '') {
+                fetch(`passport_office.php?location=${encodeURIComponent(location)}`)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('result').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+        });
+
+    </script>
+</body>
+
+</html>

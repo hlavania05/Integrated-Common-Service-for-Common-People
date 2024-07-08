@@ -1,0 +1,29 @@
+CREATE TABLE centers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    state VARCHAR(100) NOT NULL,
+    pincode VARCHAR(10) NOT NULL,
+    contact VARCHAR(15)
+);
+
+
+
+
+
+CREATE TABLE passport_centers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    center_name VARCHAR(100) NOT NULL,
+    location_name VARCHAR(100) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    contact_number VARCHAR(20),
+    email VARCHAR(100)
+);
+
+INSERT INTO passport_centers (center_name, location_name, address, contact_number, email)
+VALUES
+    ('Passport Center 1', 'Location A', 'Address A', '123-456-7890', 'info@passportcenter1.com'),
+    ('Passport Center 2', 'Location B', 'Address B', '234-567-8901', 'info@passportcenter2.com'),
+    ('Passport Center 3', 'Location C', 'Address C', '345-678-9012', 'info@passportcenter3.com');
+

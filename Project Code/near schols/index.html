@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Schools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("../images/schoolbg.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 1.8rem;
+            background: #0284B1;
+            color: white;
+            margin-top:0;
+        }
+
+        .school {
+            background: white;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .school h2 {
+            margin-top: 0;
+        }
+
+        .school p {
+            margin: 1.2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <h1>Nearby Schools Information</h1>
+        <div class="container" id="schoolList">
+            <!-- School details will be inserted here by JavaScript -->
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                fetch('fetchSchools.php')
+                    .then(response => response.json())
+                    .then(data => {
+                        let schoolList = document.getElementById('schoolList');
+                        data.forEach(school => {
+                            let schoolDiv = document.createElement('div');
+                            schoolDiv.className = 'school';
+                            schoolDiv.innerHTML = `
+                            <h2>${school.name}</h2>
+                            <p><strong>Address:</strong> ${school.address}</p>
+                            <p><strong>Admission Process:</strong> ${school.admission_process}</p>
+                            <p><strong>Fees Structure:</strong> ${school.fees_structure}</p>
+                        `;
+                            schoolList.appendChild(schoolDiv);
+                        });
+                    });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Passport Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 40%;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+            margin-top: 4rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0284B1;
+            font-size: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 1rem 0 0.3rem;
+        }
+
+        input,
+        textarea {
+            padding: 0.7rem;
+            border-radius: 0.6rem;
+            border: 2px solid #ddd;
+            width: 95%;
+            margin: 0.5rem auto;
+            font-size: 1rem;
+            color: black;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 3rem;
+        }
+
+        button {
+            margin-top: 1.3rem;
+            padding: 0.6rem 0.2rem;
+            border: 2px solid #0284B1;
+            border-radius: 0.6rem;
+            background: white;
+            color: #0284B1;
+            font-size: 100%;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        button:hover {
+            color: white;
+            background: #0284B1;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Passport Center Details</h1>
+        <form id="passportForm" action="addPassport_centers.php" method="POST">
+            <label for="center_name">Center Name:</label>
+            <input type="text" id="center_name" name="center_name" required>
+
+            <label for="location_name">Location Name:</label>
+            <input type="text" id="location_name" name="location_name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="contact_number">Contact Number:</label>
+            <input type="tel" id="contact_number" name="contact_number">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <button type="submit">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>

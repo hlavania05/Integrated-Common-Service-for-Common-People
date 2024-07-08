@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SevaKendra</title>
+
+    <!-- CDN CSS Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css2/style.css">
+    <style>
+        .hero {
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #0280B1;
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        .colo {
+            color: #0280B1;
+        }
+
+        .marketing a {
+            text-decoration: none;
+            color: #0280B1;
+            border: 2px solid #0280B1;
+            padding: 0.4rem 0.9rem;
+            font-size: 1.2rem;
+            background-color: white;
+        }
+
+        .marketing a:hover {
+            text-decoration: none;
+            color: white;
+            border: none;
+            background-color: #0280B1;
+        }
+    </style>
+
+    <!-- font Awesom CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar bg">
+        <div class="container-fluid px-4">
+            <img src="../images/logo.png" width="220px" height="50px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Visit More</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./goverment_scheme_details.html">Goverment Schemes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./adhar_office.html">Nearest Adhar Office Centers</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./passport_office.html">Nearest Passport office Centers</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./rashan_center.html">Ration Card Center</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar Exit -->
+
+    <!-- main section start -->
+    <main>
+        <div class="px-4 py-5 mb-2 text-center hero">
+            <h1 class="display-5 fw-bold">Welcome to your Government Services center</h1>
+            <div class="col-lg-8 mx-auto">
+                <p class="lead mb-4">Welcome to your one-stop destination for all information related to government
+                    services. Our mission is to bridge the gap between the government and its citizens by providing
+                    clear, accessible, and up-to-date information on a wide range of services and programs. We aim to
+                    empower you with the knowledge you need to take full advantage of the resources and benefits offered
+                    by the government.</p>
+            </div>
+        </div>
+
+        <div class="px-4 py-5 text-center">
+            <h1 class="display-4">Goverment Services</h1>
+        </div>
+
+        <div class="container mb-4">
+            <div class="row g-5">
+                <div class="col-md-8">
+                    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                        <div class="col-lg-12 px-0">
+                            <h1 class="display-6">Healthcare Services</h1>
+                            <p class="lead my-3"><Strong>Access to Healthcare</Strong>
+                                Government healthcare services ensure access to medical care through public hospitals,
+                                clinics, and health centers. These facilities offer essential services such as
+                                vaccinations, maternal care, and treatment for common illnesses.</p>
+                            <p class="lead my-3"><Strong>Healthcare insurance</Strong>
+                                Government-provided health insurance programs aim to cover medical expenses for eligible
+                                individuals and families. Programs like Medicaid and Medicare help ensure that everyone
+                                has access to necessary healthcare services without financial hardship.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                        <div class="col-lg-12 px-0">
+                            <h1 class="display-6">Education Services</h1>
+                            <p class="lead my-3"><Strong>Public Schools</Strong>
+                                Government-funded public schools offer free or subsidized education from kindergarten
+                                through high school. They provide essential learning resources and extracurricular
+                                activities to promote academic and personal development.</p>
+                            <p class="lead my-3"><Strong>Scholarships and Grants</Strong>
+                                Government scholarships and educational grants support students pursuing higher
+                                education by covering tuition fees, books, and living expenses. These programs aim to
+                                make education accessible to students from diverse socio-economic backgrounds.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                        <div class="col-lg-12 px-0">
+                            <h1 class="display-6">Social Welfare Services</h1>
+                            <p class="lead my-3"><Strong>Social Security</Strong>
+                                Government social security programs provide financial assistance to retirees, disabled
+                                individuals, and survivors of deceased workers. These programs ensure a basic income and
+                                support for those unable to work.</p>
+                            <p class="lead my-3"><Strong>Welfare Benefits</Strong>
+                                Welfare programs offer temporary financial aid to low-income individuals and families to
+                                meet basic needs such as food, housing, and childcare. They aim to reduce poverty and
+                                support economic stability.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                        <div class="col-lg-12 px-0">
+                            <h1 class="display-6">Legal Services</h1>
+                            <p class="lead my-3"><Strong>Legal Aid</Strong>
+                                Government-funded legal aid services provide free or low-cost legal assistance to
+                                individuals who cannot afford private attorneys. They ensure access to justice and help
+                                resolve legal disputes and issues.</p>
+                            <p class="lead my-3"><Strong>Public Defenders</Strong>
+                                Public defender services offer legal representation to individuals accused of crimes who
+                                cannot afford a private lawyer. They ensure fair trials and uphold the rights of
+                                defendants.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+                        <div class="col-lg-12 px-0">
+                            <h1 class="display-6">Infrastructure Services</h1>
+                            <p class="lead my-3"><Strong>Transportation</Strong>
+                                Government transportation services include road networks, public transit systems, and
+                                infrastructure projects. They aim to improve mobility, reduce traffic congestion, and
+                                enhance connectivity within communities.</p>
+                            <p class="lead my-3"><Strong>Utilities</Strong>
+                                Government utilities ensure access to essential services such as water, electricity, and
+                                sanitation. They manage infrastructure projects to provide reliable and affordable
+                                utilities to residents and businesses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="position-sticky" style="top: 2rem;">
+                        <div class="p-4 mb-3 bg-body-secondary rounded">
+                            <h4 class="fst-italic">Accessibility</h4>
+                            <p class="mb-0">Our website is designed to be accessible to all users. If you encounter any
+                                accessibility issues, please contact us, and we will do our best to accommodate your
+                                needs<a href="../contact.html">Contact Us</a>.
+                            </p>
+                        </div>
+
+                        <div class="p-4 mb-3 bg-body-secondary rounded">
+                            <h4 class="fst-italic">Feedback</h4>
+                            <p class="mb-0">We value your feedback. Your suggestions help us improve our services and
+                                better serve you. Please take a moment to share your thoughts with us
+                                <a href="../feedback.html">Give Feedback</a>.
+                            </p>
+                        </div>
+
+                        <div class="p-4 bg-body-secondary">
+                            <h4 class="fst-italic">Elsewhere</h4>
+                            <ol class="list-unstyled">
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4 py-4 text-center">
+            <h1 class="display-4">Featured Services</h1>
+        </div>
+
+        <div class="container marketing mb-4">
+            <div class="row">
+                <div class="col-lg-3 display-flex justify-content-center">
+                    <h4 class="fw-normal">Nearest Government Offices for Aadhar Registration</h4>
+                    <p>Locate the nearest centers for Aadhar and land registration services.</p>
+                    <p><a class="btn btn-secondary" href="./adhar_office.html">View details »</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="fw-normal">Passport Center Details and VISA/Passport Consultants</h4>
+                    <p>Access detailed information about passport centers and contact details for visa and passport
+                        consultants.</p>
+                    <p><a class="btn btn-secondary" href="./passport_office.html">View details »</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="fw-normal">Ration Card/Voter ID Centers</h4>
+                    <p>Get information on centers that handle queries related to ration cards and voter IDs.</p>
+                    <p><a class="btn btn-secondary" href="./rashan_center.html">View details »</a></p>
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="fw-normal">Government Scheme Details for Farmers/ Women/ Students</h4>
+                    <p>Learn about various government schemes available for farmers, women, students, and more.</p>
+                    <p><a class="btn btn-secondary" href="./goverment_scheme_details.html">View details »</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="px-4 py-5 my-2 text-center">
+        <div class="col-lg-8 mx-auto">
+            <p class="lead mb-4">Thank you for visiting our government services awareness hub. We are dedicated to
+                providing you with the information and support you need to make informed decisions and take full
+                advantage of the resources available to you. Together, we can build a more informed and empowered
+                community.</p>
+        </div>
+    </div>
+    <!-- main section end -->
+
+    <!-- Footer section Start -->
+    <div class="container-fluid bg">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top padd">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <span class="mb-3 mb-md-0 color">
+                    <p>© 2024 Company, SevaKendra.com</p>
+                </span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="color" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="color" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="ms-3"><a class="color" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Footer section end -->
+
+
+
+    <!-- CDN JS Bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

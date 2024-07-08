@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Form - Enter Coaching Center Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 40%;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            font-size : 2rem;
+            color: #0284B1;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 0.3rem;
+            margin-bottom: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            color: #0284B1;
+            background-color: white;
+            padding: 0.5rem 1.4rem;
+            border: 2px solid #0284B1;
+            border-radius: 1.2rem;
+            cursor: pointer;
+            font-size: 1.4rem;
+            margin-top: 0.3rem;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0284B1;
+            color : white;
+            border : none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Enter Coaching Center Details</h2>
+        <form action="addCoaching.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="courses_offered">Courses Offered:</label><br>
+            <textarea id="courses_offered" name="courses_offered" rows="3" required></textarea><br><br>
+
+            <label for="admission_process">Admission Process:</label><br>
+            <input type="text" id="admission_process" name="admission_process" required><br><br>
+
+            <label for="location">Location:</label><br>
+            <input type="text" id="location" name="location" required><br><br>
+
+            <label for="faculty_name">Faculty Name:</label><br>
+            <input type="text" id="faculty_name" name="faculty_name" required><br><br>
+
+            <label for="fee_structure">Fee Structure:</label><br>
+            <input type="text" id="fee_structure" name="fee_structure" required><br><br>
+
+            <label for="contact_info">Contact Information:</label><br>
+            <input type="text" id="contact_info" name="contact_info" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

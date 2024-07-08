@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SevaKendra</title>
+
+    <!-- CDN CSS Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css2/style.css">
+    <style>
+        .hero {
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("./images/hero.webp");
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        .colo {
+            color: #0280B1;
+        }
+    </style>
+
+    <!-- font Awesom CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar bg">
+        <div class="container-fluid px-4">
+            <img src="../images/logo.png" width="220px" height="50px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Visit More</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./near_hospitals.html">Nearby Hospitals and
+                                        Clinics</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./expert_advice.html">Expert Advice</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./wellness_tips.html">Wellness Tips</a>
+                                </li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="./health-topics.html">Health Topics</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar Exit -->
+
+    <!-- hero Section Start-->
+    <div class="px-4 py-5 text-center border-bottom hero">
+        <h1 class="display-6 fw-bold head">Welcome to HealthCare Point</h1>
+        <div class="col-lg-6 mt-4 mx-auto">
+            <p class="lead mb-4">At HealthCare Point, your health and well-being are our top priorities. Our mission is
+                to provide you with accurate, up-to-date information to help you make informed decisions about your
+                health. </p>
+        </div>
+    </div>
+    <!-- hero Section Exit -->
+
+    <!-- main section start -->
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="display-5 pb-4 border-bottom">Why Choose HealthCare Point?</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h4 class="fs-2 text-body-emphasis">Trusted Information</h4>
+                    <p>We partner with leading healthcare professionals and organizations to ensure the information we
+                        provide is reliable and evidence-based. Our content is meticulously reviewed by experts to
+                        ensure you receive the most accurate and current information available.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h4 class="fs-2 text-body-emphasis">Comprehensive Resources</h4>
+                    <p>Our extensive library covers a wide range of health topics to cater to all your healthcare needs.
+                        From common illnesses like colds and flu to more complex conditions like diabetes and heart
+                        disease, we provide detailed information to help you understand your symptoms, treatment
+                        options, and preventive measures.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h4 class="fs-2 text-body-emphasis">User-Friendly</h4>
+                    <p>HealthCare Point is designed to be easy to navigate, ensuring you can quickly find the
+                        information you need. Our intuitive layout and search functionality make it simple to locate
+                        articles, videos, and interactive tools relevant to your interests.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h4 class="fs-2 text-body-emphasis">Personalized Content</h4>
+                    <p>Get articles and resources tailored to your specific health interests and concerns. By signing up
+                        for our newsletter or creating a personalized account, you can receive content recommendations
+                        that match your health profile and preferences.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div>
+                    <h4 class="fs-2 text-body-emphasis">Interactive Tools</h4>
+                    <p>Utilize our interactive tools to track your health, calculate BMI, or assess your risk for
+                        various conditions. These tools are designed to provide you with actionable insights and help
+                        you stay proactive about your health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-4 display-5 border-bottom">Featured Sections</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <h4 class="fs-2 text-body-emphasis">Health Topics</h4>
+                <p>Explore our in-depth articles on various health topics, including symptoms, treatments, and
+                    preventive measures.</p>
+                <a href="./health-topics.html" class="icon-link">
+                    Read More<i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="feature col">
+                <h4 class="fs-2 text-body-emphasis">Wellness Tips</h4>
+                <p>Discover practical advice and tips on maintaining a healthy lifestyle, from nutrition and fitness to
+                    mental health and stress management.F</p>
+                <a href="./wellness_tips.html" class="icon-link">
+                    Read More
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="feature col">
+                <h4 class="fs-2 text-body-emphasis">Expert Advice</h4>
+                <p>Read insights and advice from leading healthcare professionals to stay informed about the latest in
+                    health and medicine.</p>
+                <a href="./expert_advice.html" class="icon-link">
+                    Read More
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="faq">
+        <article class="blog-post">
+            <h2 class="display-5 border-bottom pb-4">Frequently Asked Questions (FAQs)</h2>
+            <div class="accordion py-4" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What type of information does HealthCare Point provide?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>HealthCare Point provides comprehensive information on various health topics including
+                                symptoms, treatments, preventive measures, wellness tips, and expert advice. Our content
+                                is reviewed by medical professionals to ensure accuracy and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How can I contact a healthcare professional through HealthCare Point?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Currently, HealthCare Point does not offer direct contact with healthcare professionals
+                                for consultations. However, we provide expert advice through articles, interviews, and
+                                Q&A sessions with medical specialists. If you have specific health concerns, we
+                                recommend consulting your healthcare provider.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I contribute to HealthCare Point by sharing my health story or expertise?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Yes! We welcome contributions from individuals who have personal health stories to share
+                                or healthcare professionals who wish to contribute expert insights. Please contact us
+                                through our Contact Us page for more information on how to submit your content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Are the interactive tools on HealthCare Point free to use?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Yes, all interactive tools on HealthCare Point, such as the BMI calculator, symptom
+                                checker, and health risk assessments, are free for users to access and use. These tools
+                                are designed to provide you with valuable health information and insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Is the information on HealthCare Point reviewed and verified by healthcare professionals?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Yes, all content published on HealthCare Point undergoes rigorous review by qualified
+                                healthcare professionals. This ensures that the information provided is accurate,
+                                up-to-date, and based on credible sources such as medical literature, clinical
+                                guidelines, and reputable health organizations. Our commitment is to provide reliable
+                                health information to empower users to make informed decisions about their health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div>
+        <div class="p-5 text-center bg-body-tertiary">
+            <div class="container py-5">
+                <h3 class="mb-3">Get Started</h3>
+                <p class="col-lg-7 mx-auto" style="font-size:large">
+                    Start exploring HealthCare Point today and take the first step towards a healthier, more informed
+                    you. Whether you're looking for information on a specific health condition, wellness tips, or expert
+                    advice, HealthCare Point has the resources you need.
+                </p>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="./health-topics.html" class="nav-link px-3 border-end border-2 border-primary">Explore
+                            Health Topics</a></li>
+                    <li><a href="./expert_advice.html" class="nav-link px-3 border-end border-2 border-primary">Expert
+                            Advice</a></li>
+                    <li><a href="./near_hospitals.html" class="nav-link px-3 border-end border-2 border-primary">Nearby
+                            Hospitals</a></li>
+                    <li><a href="#faq" class="nav-link px-3 border-end border-2 border-primary">FAQs</a></li>
+                    <li><a href="../contact.html" class="nav-link px-3">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- main section end -->
+
+    <!-- Footer section Start -->
+    <div class="container-fluid bg">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top padd">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <span class="mb-3 mb-md-0 color">
+                    <p>© 2024 Company, SevaKendra.com</p>
+                </span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="color" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="color" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="ms-3"><a class="color" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Footer section end -->
+
+
+
+    <!-- CDN JS Bootstrap link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

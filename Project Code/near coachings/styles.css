@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 85%;
+    margin: 2rem auto;
+    background-color: #f0f0f0;
+    padding: 1.5px;
+    border-radius: 1rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 1.8rem;
+    background: #0284B1;
+    color: white;
+    margin-top:0;
+}
+
+.coaching-center {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.coaching-center h2 {
+    margin-top: 0;
+}
+
+.coaching-center p {
+    margin-bottom: 0.5rem;
+}
+

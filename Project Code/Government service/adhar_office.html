@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Nearest Aadhar Centers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin : 0;
+        }
+
+        .container {
+            background: white;
+            padding: 6rem;
+            border-radius: 0.3rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("./images/adhar\ centers.jpg");
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            height: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 2rem;
+            background: #0284B1;
+            color: white;
+            margin-top: 0;
+            margin-bottom : 0;
+        }
+
+        input {
+            padding: 0.8rem;
+            width: 30vw;
+            margin: 0.8rem 0;
+            font-size : 1.3rem;
+            border-radius: .4rem;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            background: white;
+            color:  #0284B1;;
+            border: 2px solid  #0284B1;
+            cursor: pointer;
+            border-radius: 0.4rem;
+            font-size : 1.3rem;
+            margin-left : 0.4rem;
+        }
+
+        button:hover {
+            background: #0284B1;
+            color :white;
+            border : bone;
+        }
+
+        #results {
+            padding : 2rem auto;
+            margin: 2rem auto;
+            width : 70%;
+            border-radius : 0.8rem;
+            background-color:  #f4f4f4;
+        }
+        .center{
+            border-radius: 1rem; 
+            padding : 1.4rem; 
+            border: 1px solid #ccc; 
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+            margin-top : 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Search Nearest Aadhar Centers</h1>
+    <div class="container">
+        <form id="searchForm">
+            <input type="text" id="location" name="location" placeholder="Enter location name" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="results"></div>
+    <script>document.getElementById('searchForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const location = document.getElementById('location').value;
+
+            fetch('adhar.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `location=${location}`
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const resultsDiv = document.getElementById('results');
+                    resultsDiv.innerHTML = '';
+
+                    if (data.length > 0) {
+                        data.forEach(center => {
+                            const centerDiv = document.createElement('div');
+                            centerDiv.classList.add('center');
+                            centerDiv.innerHTML = `
+                        <h2>${center.name}</h2>
+                        <p>${center.address}</p>
+                        <p>${center.city}, ${center.state} - ${center.pincode}</p>
+                        <p>Contact: ${center.contact}</p>
+                    `;
+                            resultsDiv.appendChild(centerDiv);
+                        });
+                    } else {
+                        resultsDiv.innerHTML = '<p>No centers found for the given location.</p>';
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>

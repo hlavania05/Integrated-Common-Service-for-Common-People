@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Form- Add School Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            width: 40%;
+            margin: 1rem auto;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+            margin-top: 4rem;
+        }
+        h1 {
+            text-align: center;
+            color: #0284B1;
+            font-size : 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 1rem 0 0.3rem;
+        }
+        input[type="text"], textarea {
+            padding: 0.7rem;
+            border-radius: 0.8rem;
+            border: 2px solid #ddd;
+            width: 95%;
+            margin : 0.2rem auto;
+            font-size : 1rem;
+        }
+        textarea {
+            resize: vertical;
+            height: 3rem;
+        }
+        input[type="submit"] {
+            margin-top: 1.3rem;
+            padding: 0.4rem 0.5rem;
+            border: 2px solid #0284B1;
+            border-radius: 1rem;
+            background: white;
+            color: #0284B1;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width : 30%;
+        }
+        input[type="submit"]:hover {
+            color : white;
+            background: #0284B1;
+            border : none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add School</h1>
+        <form action="addSchool.php" method="post">
+            <label for="name">School Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="admission_process">Admission Process</label>
+            <textarea id="admission_process" name="admission_process" required></textarea>
+            
+            <label for="fees_structure">Fees Structure</label>
+            <textarea id="fees_structure" name="fees_structure" required></textarea>
+            
+            <input type="submit" value="Add School">
+        </form>
+    </div>
+</body>
+</html>

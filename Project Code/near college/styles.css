@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 85%;
+    margin: 3rem auto;
+    background-color: #f2f2f2;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 1.8rem;
+    background: #0284B1;
+    color: white;
+    margin-top:0;
+}
+
+
+.college {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.college ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+#collegeList{
+    width : 100%;
+}
+
